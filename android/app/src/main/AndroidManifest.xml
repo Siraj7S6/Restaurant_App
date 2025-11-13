@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- REQUIRED PERMISSION: This is the fix. It allows the Flutter app to access the internet 
+         to download external resources like the food images. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:label="restaurant_app_2"
         android:name="${applicationName}"
